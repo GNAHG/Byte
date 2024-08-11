@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:globe_banner_pattern"
+        },
+        "title": "施法所需用品              ",
+        "description": "§b翅节*2(施法失败不消耗)\n翅版*4(施法失败不消耗)\n粘液球*1.\n\n§a建议使用魔力因子加速.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/charmed_table/elytra/elytra",
+    "criteria": {
+        "recipe": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "recipe"
+        ]
+    ]
+}

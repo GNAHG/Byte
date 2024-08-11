@@ -1,0 +1,3 @@
+particle happy_villager ~ ~ ~ 0 0 0 0 1 force @a[tag=admin]
+execute unless entity @e[tag=byte_shoot_tnt,distance=..1] if entity @s[distance=..5] unless entity @e[distance=..0.5,type=tnt,tag=!byte_shoot_tnt] positioned ^ ^ ^0.15 run function byte:ray/entity/tnt/tnt_dispenserray
+execute unless entity @e[tag=byte_shoot_tnt,distance=..1] if entity @s[distance=..5] if entity @e[distance=..0.5,type=tnt,tag=!byte_shoot_tnt] run function byte:gameplay/entity/tnt/tnt_dispenser

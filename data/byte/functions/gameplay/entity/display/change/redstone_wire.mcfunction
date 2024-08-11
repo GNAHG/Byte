@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ redstone_wire[power=0] run data merge entity @s {text:'"§70"'}
+execute if block ~ ~ ~ redstone_wire[power=1] run data merge entity @s {text:'"§a1"'}
+execute if block ~ ~ ~ redstone_wire[power=2] run data merge entity @s {text:'"§a2"'}
+execute if block ~ ~ ~ redstone_wire[power=3] run data merge entity @s {text:'"§a3"'}
+execute if block ~ ~ ~ redstone_wire[power=4] run data merge entity @s {text:'"§a4"'}
+execute if block ~ ~ ~ redstone_wire[power=5] run data merge entity @s {text:'"§a5"'}
+execute if block ~ ~ ~ redstone_wire[power=6] run data merge entity @s {text:'"§a6"'}
+execute if block ~ ~ ~ redstone_wire[power=7] run data merge entity @s {text:'"§a7"'}
+execute if block ~ ~ ~ redstone_wire[power=8] run data merge entity @s {text:'"§a8"'}
+execute if block ~ ~ ~ redstone_wire[power=9] run data merge entity @s {text:'"§a9"'}
+execute if block ~ ~ ~ redstone_wire[power=10] run data merge entity @s {text:'"§a10"'}
+execute if block ~ ~ ~ redstone_wire[power=11] run data merge entity @s {text:'"§a11"'}
+execute if block ~ ~ ~ redstone_wire[power=12] run data merge entity @s {text:'"§a12"'}
+execute if block ~ ~ ~ redstone_wire[power=13] run data merge entity @s {text:'"§a13"'}
+execute if block ~ ~ ~ redstone_wire[power=14] run data merge entity @s {text:'"§a14"'}
+execute if block ~ ~ ~ redstone_wire[power=15] run data merge entity @s {text:'"§a15"'}

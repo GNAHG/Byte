@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass_block"
+        },
+        "title": "原版改动       ",
+        "description": "数据包改动了一些原版内容,真实有趣!",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/root",
+    "criteria": {
+        "block": {
+            "conditions": {
+                "location": []
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "block"
+        ]
+    ]
+}

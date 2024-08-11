@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:globe_banner_pattern"
+        },
+        "title": "施法所需用品              ",
+        "description": "§b金苹果*1\n金块*1\n绿宝石块*1\n哭泣的黑曜石*1\n岩浆膏*1",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/charmed_table/enchanted_golden_apple/enchanted_golden_apple",
+    "criteria": {
+        "recipe": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "recipe"
+        ]
+    ]
+}

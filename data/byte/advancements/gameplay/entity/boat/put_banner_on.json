@@ -1,0 +1,25 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "put_banner_on": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "tag": "banners"
+                        }
+                    }
+                }
+            },
+            "trigger": "started_riding"
+        }
+    },
+    "requirements": [
+        [
+            "put_banner_on"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/boat/put_banner_onray"
+    }
+}

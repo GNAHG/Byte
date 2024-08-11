@@ -1,0 +1,1 @@
+execute as @e[type=item,nbt={Item: {id: "minecraft:iron_nugget",tag:{Tags:["byte_coin"]}},PickupDelay:40s}] at @s if entity @p[predicate=!byte:is_sneaking] run function byte:gameplay/item/coin/use_coin

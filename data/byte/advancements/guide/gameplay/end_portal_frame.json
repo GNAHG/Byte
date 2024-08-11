@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_portal_frame"
+        },
+        "title": "弹出光盘       ",
+        "description": "§7物理弹出...§a\n向末地传送门框架射箭可以弹出末影之眼.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/stonecutter",
+    "criteria": {
+        "end_portal_frame": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "end_portal_frame"
+        ]
+    ]
+}

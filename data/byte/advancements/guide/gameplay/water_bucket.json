@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:water_bucket"
+        },
+        "title": "吨吨吨       ",
+        "description": "手持水桶可以给脚下的作物浇水来加速生长.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/gameplay",
+    "criteria": {
+        "water_bucket": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "water_bucket"
+        ]
+    ]
+}

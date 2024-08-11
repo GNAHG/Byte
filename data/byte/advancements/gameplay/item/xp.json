@@ -1,0 +1,23 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "xp": {
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{Tags:[\"byte_xp\"]}"
+                    }
+                ]
+            },
+            "trigger": "inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "xp"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/item/xp"
+    }
+}

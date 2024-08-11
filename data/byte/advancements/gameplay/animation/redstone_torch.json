@@ -1,0 +1,30 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "redstone_torch": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "redstone_torch"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "redstone_torch"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/animation/redstone_torch"
+    }
+}

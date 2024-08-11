@@ -1,0 +1,68 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "fill_player_head": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "cartography_table"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": [
+                                "name_tag"
+                            ],
+                            "nbt": "{Tags:[\"byte_named_name_tag\"]}"
+                        }
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "offhand": {
+                                    "items": [
+                                        "player_head"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "offhand": {
+                                        "nbt": "{}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "fill_player_head"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/fill_player_head"
+    }
+}

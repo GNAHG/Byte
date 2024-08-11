@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:globe_banner_pattern"
+        },
+        "title": "施法所需用品              ",
+        "description": "§b海洋之心*1(施法失败/雷雨天时不消耗)\n海晶碎片*1\n羽毛*1.\n\n§a在平原/热带地区施法更快.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/charmed_table/rain/rain",
+    "criteria": {
+        "recipe": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "recipe"
+        ]
+    ]
+}

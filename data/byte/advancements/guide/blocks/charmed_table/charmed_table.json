@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:enchanting_table"
+        },
+        "title": "使用魔力台的配方              ",
+        "description": "§7(放置附魔台来解锁此章节)\n§a吸引一只§c末影螨§a在附魔台上方,合成魔力台.\n直接将配方§c丢§a在魔力台上方即可施法.\n\n施法过程中,§c魔力值§a会持续积累,过程中有几率丢失魔力值.\n达到配方所需魔力值后,施法完成.\n魔力值为负数,施法失败.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/blocks",
+    "criteria": {
+        "enchanting_table": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "enchanting_table"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "enchanting_table"
+        ]
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "ifni": {
+            "conditions": {
+                "entity": {
+                    "type": "item_frame"
+                },
+                "item": {
+                    "items": [
+                        "leather"
+                    ]
+                },
+                "player": {
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "player_interacted_with_entity"
+        }
+    },
+    "requirements": [
+        [
+            "ifni"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/item_frame/ifniray"
+    }
+}

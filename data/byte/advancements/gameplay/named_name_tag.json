@@ -1,0 +1,75 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "named_name_tag": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "cartography_table"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "predicate": {
+                            "items": [
+                                "name_tag"
+                            ],
+                            "nbt": "{Tags:[\"byte_named_name_tag\"]}"
+                        },
+                        "condition": "match_tool"
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "any_of",
+                            "terms": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "offhand": {
+                                                "items": [
+                                                    "air",
+                                                    "name_tag",
+                                                    "player_head"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "equipment": {
+                                            "offhand": {
+                                                "nbt": "{Tags:[\"byte_named\"]}"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "named_name_tag"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/named_name_tag"
+    }
+}

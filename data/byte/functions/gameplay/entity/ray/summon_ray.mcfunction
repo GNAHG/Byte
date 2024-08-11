@@ -1,0 +1,1 @@
+execute anchored eyes run function byte:gameplay/entity/ray/execute_ray

@@ -1,0 +1,30 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "clock": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "clock"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "clock"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/animation/clock"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "tnt_dispenser": {
+            "conditions": {
+                "item": {
+                    "items": [
+                        "spyglass"
+                    ]
+                },
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type_specific": {
+                                "type": "player",
+                                "looking_at": {
+                                    "type": "tnt",
+                                    "distance": {
+                                        "absolute": {
+                                            "max": 5.5
+                                        }
+                                    }
+                                }
+                            },
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "spyglass"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "nbt": "{Tags:[\"byte_tnt_dispenser_loaded\"]}"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "offhand": {
+                                        "nbt": "{Tags:[\"byte_tnt_dispenser_loaded\"]}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "using_item"
+        }
+    },
+    "requirements": [
+        [
+            "tnt_dispenser"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/tnt/tnt_dispenserray"
+    }
+}

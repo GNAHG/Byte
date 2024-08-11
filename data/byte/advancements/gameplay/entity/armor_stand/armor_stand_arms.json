@@ -1,0 +1,62 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "armor_stand_arms_mainhand": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": [
+                                "armor_stand"
+                            ]
+                        }
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "stick"
+                            ]
+                        }
+                    }
+                }
+            },
+            "trigger": "item_used_on_block"
+        },
+        "armor_stand_arms_offhand": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": [
+                                "armor_stand"
+                            ]
+                        }
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "offhand": {
+                            "items": [
+                                "stick"
+                            ]
+                        }
+                    }
+                }
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "armor_stand_arms_mainhand",
+            "armor_stand_arms_offhand"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/armor_stand/armor_stand_armsray"
+    }
+}

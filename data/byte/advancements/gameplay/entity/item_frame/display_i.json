@@ -1,0 +1,30 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "display_i": {
+            "trigger": "location",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "water_bucket"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "display_i"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/entity/item_frame/display_i"
+    }
+}

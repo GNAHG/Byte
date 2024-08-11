@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:white_stained_glass"
+        },
+        "title": "白色染色玻璃              ",
+        "description": "放置在§c铁块§a上方.\n别忘了§c压力板§a!",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/piston/coin/2",
+    "criteria": {
+        "place": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "white_stained_glass"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "byte:guide/blocks/piston/coin/2": true
+                        }
+                    }
+                }
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "place"
+        ]
+    ]
+}

@@ -1,0 +1,11 @@
+execute if score @s bytenumid matches 1..4 run function byte:admin_tool/display_entity/chat/transformation/right_rotation/set_entity
+execute if score @s bytenumid matches 5..8 run function byte:admin_tool/display_entity/chat/transformation/left_rotation/set_entity
+execute if score @s bytenumid matches 9..11 run function byte:admin_tool/display_entity/chat/transformation/scale/set_entity
+execute if score @s bytenumid matches 12..14 run function byte:admin_tool/display_entity/chat/transformation/translation/set_pos
+execute if score @s bytenumid matches 15..17 run function byte:admin_tool/display_entity/chat/transformation/translation/set_translation
+execute if score @s bytenumid matches 18..19 run function byte:admin_tool/display_entity/chat/transformation/translation/set_rotation
+execute if score @s bytenumid matches 20..21 run function byte:admin_tool/display_entity/chat/transformation/other/set_brightness
+execute if score @s bytenumid matches 22..23 run function byte:admin_tool/display_entity/chat/transformation/other/set_shadow
+execute if score @s bytenumid matches 24..26 run function byte:admin_tool/display_entity/chat/transformation/other/set_view_range
+execute if score @s bytenumid matches 27 run function byte:admin_tool/display_entity/chat/transformation/other/set_glow
+execute if score @s bytenumid matches 28 run function byte:admin_tool/display_entity/chat/set_entity

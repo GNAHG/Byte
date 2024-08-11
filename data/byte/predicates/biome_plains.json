@@ -1,0 +1,75 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "plains"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "snowy_plains"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "sunflower_plains"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "savanna"
+            }
+        },{
+            "condition": "location_check",
+            "predicate": {
+                "biome": "windswept_savanna"
+            }
+        },{
+            "condition": "location_check",
+            "predicate": {
+                "biome": "savanna_plateau"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "desert"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "meadow"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "jungle"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "badlands"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "eroded_badlands"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "wooded_badlands"
+            }
+        }
+    ]
+}

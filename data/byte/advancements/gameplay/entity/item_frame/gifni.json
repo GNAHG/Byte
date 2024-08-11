@@ -1,0 +1,31 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "gifni": {
+            "conditions": {
+                "entity": {
+                    "type": "glow_item_frame"
+                },
+                "item": {
+                    "items": [
+                        "leather"
+                    ]
+                },
+                "player": {
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "player_interacted_with_entity"
+        }
+    },
+    "requirements": [
+        [
+            "gifni"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/item_frame/gifniray"
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{Tags:[\"byte_named_name_tag\"],display:{Name:'{\"italic\":false,\"text\":\"物品标记牌\"}'}}"
+}

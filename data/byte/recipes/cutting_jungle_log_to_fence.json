@@ -1,0 +1,8 @@
+{
+    "type": "stonecutting",
+    "ingredient": {
+        "item": "jungle_planks"
+    },
+    "count": 1,
+    "result": "jungle_fence"
+}

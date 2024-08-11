@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:globe_banner_pattern"
+        },
+        "title": "施法所需用品              ",
+        "description": "§b下界合金碎片*1(施法失败不消耗)\n火药*1\n末影箱*1\n紫珀块*1",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/charmed_table/shulker_shell/shulker_shell",
+    "criteria": {
+        "recipe": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "recipe"
+        ]
+    ]
+}

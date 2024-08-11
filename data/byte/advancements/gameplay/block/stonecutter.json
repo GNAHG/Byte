@@ -1,0 +1,27 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "stonecutter": {
+            "conditions": {
+                "player": {
+                    "stepping_on": {
+                        "block": {
+                            "blocks": [
+                                "stonecutter"
+                            ]
+                        }
+                    }
+                }
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "stonecutter"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/block/stonecutter"
+    }
+}

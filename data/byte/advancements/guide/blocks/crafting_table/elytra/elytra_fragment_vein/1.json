@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stripped_bamboo_block"
+        },
+        "title": "去皮竹块              ",
+        "description": "放置在§c工作台§a上方.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/crafting_table/elytra/elytra_fragment_vein/elytra_fragment_vein",
+    "criteria": {
+        "place": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "stripped_bamboo_block"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "place"
+        ]
+    ]
+}

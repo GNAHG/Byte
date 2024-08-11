@@ -1,0 +1,30 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "crying_obsidian": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "crying_obsidian"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "crying_obsidian"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/animation/crying_obsidian"
+    }
+}

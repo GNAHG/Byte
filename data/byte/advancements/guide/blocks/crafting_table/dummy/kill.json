@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:piston"
+        },
+        "title": "回收再利用              ",
+        "description": "使用活塞将假人挤压到§c活塞头§a内,即可回收假人.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/crafting_table/dummy/dummy",
+    "criteria": {
+        "kill": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "kill"
+        ]
+    ]
+}

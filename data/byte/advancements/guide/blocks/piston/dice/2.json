@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gilded_blackstone"
+        },
+        "title": "镶金黑石              ",
+        "description": "放置在§c第一个雕纹石英块§a上方.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/piston/dice/1",
+    "criteria": {
+        "place": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "gilded_blackstone"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "byte:guide/blocks/piston/dice/1": true
+                        }
+                    }
+                }
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "place"
+        ]
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "gifi": {
+            "conditions": {
+                "entity": {
+                    "type": "glow_item_frame"
+                },
+                "item": {
+                    "items": [
+                        "water_bucket"
+                    ]
+                },
+                "player": {
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "player_interacted_with_entity"
+        }
+    },
+    "requirements": [
+        [
+            "gifi"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/item_frame/gifiray"
+    }
+}

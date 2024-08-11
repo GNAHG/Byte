@@ -1,0 +1,36 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "leash_knot": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": [
+                                "lead"
+                            ]
+                        }
+                    }
+                ],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "byte:gameplay/entity/leash_knot/leash_knoted": false
+                        }
+                    }
+                }
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "leash_knot"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/leash_knot/leash_knotray"
+    }
+}

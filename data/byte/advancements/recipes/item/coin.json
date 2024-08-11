@@ -1,0 +1,72 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "coin": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "tag":"pressure_plates"
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "white_stained_glass"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": -2,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "iron_block"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": -3,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "white_stained_glass"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": -4,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "piston"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "coin"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:recipes/item/coin"
+    }
+}

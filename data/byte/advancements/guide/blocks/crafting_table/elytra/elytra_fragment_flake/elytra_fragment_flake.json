@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:paper"
+        },
+        "title": "翅板              ",
+        "description": "合成一个翅板.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/crafting_table/elytra/elytra",
+    "criteria": {
+        "flake": {
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{Tags:[\"byte_elytra_fragment_flake\"]}"
+                    }
+                ]
+            },
+            "trigger": "inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "flake"
+        ]
+    ]
+}

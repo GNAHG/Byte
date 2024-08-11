@@ -1,0 +1,28 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "use_flint_and_steel": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": [
+                                "flint_and_steel"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "use_flint_and_steel"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/animation/use_flint_and_steel"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:armor_stand"
+        },
+        "title": "有手就行       ",
+        "description": "§7它是可以有手的.§a\n持木棍放置盔甲架,可以添加手臂.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/chest_boat",
+    "criteria": {
+        "armor_stand": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "armor_stand"
+        ]
+    ]
+}

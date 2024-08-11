@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carved_pumpkin"
+        },
+        "title": "雕刻南瓜              ",
+        "description": "放置在§c哭泣的黑曜石§a上方.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/crafting_table/dummy/2",
+    "criteria": {
+        "place": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "carved_pumpkin"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "byte:guide/blocks/crafting_table/dummy/2": true
+                        }
+                    }
+                }
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "place"
+        ]
+    ]
+}

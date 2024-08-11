@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:green_banner"
+        },
+        "title": "扬帆起航       ",
+        "description": "§7这次不是羊帆起航.§a\n右键船装上旗帜.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/chest_boat",
+    "criteria": {
+        "green_banner": {
+           
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "green_banner"
+        ]
+    ]
+}

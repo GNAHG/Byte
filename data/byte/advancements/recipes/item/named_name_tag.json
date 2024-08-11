@@ -1,0 +1,54 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "named_name_tag": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "cartography_table"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": [
+                                "name_tag"
+                            ]
+                        }
+                    }
+                ],
+                "player": [
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "mainhand": {
+                                        "nbt": "{Tags:[\"byte_named_name_tag\"]}"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "named_name_tag"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:recipes/item/named_name_tag"
+    }
+}

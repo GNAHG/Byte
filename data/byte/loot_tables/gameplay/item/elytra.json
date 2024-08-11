@@ -1,0 +1,30 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "elytra",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "type": "uniform",
+                                "max": 0.50,
+                                "min": 0.00
+                            }
+                        }
+                    ],
+                    "weight": 1
+                }
+            ],
+            "rolls": 1.0
+        }
+    ]
+}

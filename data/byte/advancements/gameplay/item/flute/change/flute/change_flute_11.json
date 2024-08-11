@@ -1,0 +1,49 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "change_flute": {
+            "conditions": {
+                "item": {
+                    "items": [
+                        "spyglass"
+                    ],
+                    "nbt": "{Tags:[\"byte_flute\"]}"
+                },
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "note_block"
+                                ],
+                                "state": {
+                                    "note": 11
+                                }
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "spyglass"
+                            ],
+                            "nbt": "{Tags:[\"byte_flute\"]}"
+                        }
+                    }
+                }
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "change_flute"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/item/flute/change/flute/change_flute_11"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": "缝纫法              ",
+        "description": "§7天衣无缝.§a\n\n§b需要 500 魔力值.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "byte:guide/blocks/charmed_table/charmed_table",
+    "criteria": {
+        "elytra": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "elytra"
+        ]
+    ]
+}

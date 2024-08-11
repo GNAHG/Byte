@@ -1,0 +1,30 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "lava_bucket": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "lava_bucket"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "lava_bucket"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/animation/lava_bucket"
+    }
+}

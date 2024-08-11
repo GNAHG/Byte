@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "amethyst_shard"
+        },
+        {
+            "item": "echo_shard"
+        }
+    ],
+    "result": {
+        "item": "echo_shard",
+        "count": 8
+    }
+}

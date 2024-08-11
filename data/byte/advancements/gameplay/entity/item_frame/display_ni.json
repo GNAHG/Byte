@@ -1,0 +1,30 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "display_ni": {
+            "trigger": "location",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "leather"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "display_ni"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/entity/item_frame/display_ni"
+    }
+}

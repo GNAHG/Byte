@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shulker_shell"
+        },
+        "title": "固爆法              ",
+        "description": "§7高温炸炼,坚固耐用.§a\n\n§b小心爆炸!在末地施法可以吸收爆炸的冲击波.\n需要 200 魔力值.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "byte:guide/blocks/charmed_table/charmed_table",
+    "criteria": {
+        "shulker_shell": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "shulker_shell"
+        ]
+    ]
+}

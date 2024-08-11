@@ -1,0 +1,2 @@
+data merge entity @s {text:'[{"score":{"objective": "bytetemp","name": "@e[tag=byte_charmed_table,sort=nearest,limit=1,distance=..0.5]"},"color": "green"}]'}
+execute unless entity @e[tag=byte_charmed_table,sort=nearest,limit=1,distance=..0.5,scores={bytetemp=-1..}] run data merge entity @s {text:'{"text": "0","color": "gray"}'}

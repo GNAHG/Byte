@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dirt_path"
+        },
+        "title": "理想实验       ",
+        "description": "§7绝对光滑的地面!§a\n现在在土径上跑步更快.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/gameplay",
+    "criteria": {
+        "dirt_path": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "dirt_path"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "dirt_path"
+        ]
+    ]
+}

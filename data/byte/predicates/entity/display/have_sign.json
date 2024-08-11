@@ -1,0 +1,72 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:oak_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:birch_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:acacia_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:bamboo_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:cherry_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:jungle_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:warped_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:crimson_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:spruce_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:dark_oak_sign\"}}"
+            }
+        },{
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Item:{id:\"minecraft:mangrove_sign\"}}"
+            }
+        }
+    ]
+}

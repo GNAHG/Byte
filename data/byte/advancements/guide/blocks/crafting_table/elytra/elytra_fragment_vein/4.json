@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lodestone"
+        },
+        "title": "磁石              ",
+        "description": "放置在§c紫珀块§a上方.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/crafting_table/elytra/elytra_fragment_vein/3",
+    "criteria": {
+        "place": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "lodestone"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "byte:guide/blocks/crafting_table/elytra/elytra_fragment_vein/3": true
+                        }
+                    }
+                }
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "place"
+        ]
+    ]
+}

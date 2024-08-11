@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:potion",
+            "nbt": "{CustomPotionColor:12318972}"
+        },
+        "title": "浮泛江海       ",
+        "description": "§7来自远方的对话.§a\n你可以将纸命名丢入大海,说不定谁会钓到呢?",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/named_name_tag",
+    "criteria": {
+        "flotsam": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{Tags:[\"byte_current_bottle\"]}"
+                    }
+                ]
+            }
+        },
+        "flotsam_local": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{Tags:[\"byte_local_current_bottle\"]}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "flotsam",
+            "flotsam_local"
+        ]
+    ]
+}

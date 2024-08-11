@@ -1,0 +1,21 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "drink_current_bottle": {
+            "conditions": {
+                "item": {
+                    "nbt": "{Tags:['byte_current_bottle']}"
+                }
+            },
+            "trigger": "minecraft:consume_item"
+        }
+    },
+    "rewards": {
+        "function": "byte:gameplay/item/current_bottle/drink_current_bottle"
+    },
+    "requirements": [
+        [
+            "drink_current_bottle"
+        ]
+    ]
+}

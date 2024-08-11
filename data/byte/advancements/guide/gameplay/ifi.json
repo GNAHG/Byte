@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:item_frame"
+        },
+        "title": "突出主体       ",
+        "description": "§7给你好好的展示下.§a\n水桶右键物品展示框移除背景.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/gameplay",
+    "criteria": {
+        "ifi": {
+           
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "ifi"
+        ]
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:crafting_table"
+        },
+        "title": "使用工作台的配方              ",
+        "description": "§7(放置工作台来解锁此章节)\n§a把它§c放在地上,往上摆放§a配方所需要的方块.\n用你的智慧站在§c最顶部§a的方块下压即可合成.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/blocks",
+    "criteria": {
+        "crafting_table": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "crafting_table"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "crafting_table"
+        ]
+    ]
+}

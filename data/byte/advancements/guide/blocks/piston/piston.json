@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:piston"
+        },
+        "title": "使用活塞的配方              ",
+        "description": "§7(放置活塞来解锁此章节)\n§a把它§c放在地上,往上摆放§a配方所需要的方块.\n在最顶部摆放一个§c任意压力板§a,\n用你的体重站在§c压力板§a上即可合成.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/blocks",
+    "criteria": {
+        "piston": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "piston"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "piston"
+        ]
+    ]
+}

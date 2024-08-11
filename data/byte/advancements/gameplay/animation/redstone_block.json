@@ -1,0 +1,48 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "redstone_block": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "redstone_block"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "location"
+        },
+        "redstone": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "redstone"
+                            ]
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "redstone_block",
+            "redstone"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/animation/redstone_block"
+    }
+}

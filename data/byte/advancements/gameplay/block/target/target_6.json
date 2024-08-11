@@ -1,0 +1,19 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "target_6": {
+            "conditions": {
+                "signal_strength": 6
+            },
+            "trigger": "target_hit"
+        }
+    },
+    "requirements": [
+        [
+            "target_6"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/block/target/target_6"
+    }
+}

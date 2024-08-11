@@ -1,0 +1,1 @@
+execute if block ~ ~-0.5 ~ dirt_path run effect give @s speed 1 0 true

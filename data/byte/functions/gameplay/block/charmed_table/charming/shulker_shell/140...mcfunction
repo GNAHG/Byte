@@ -1,0 +1,1 @@
+particle dripping_obsidian_tear ~ ~ ~ 1 1 1 0.2 1

@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:firework_star",
+            "nbt": "{Explosion:{Colors:[I;14077253],Type:0b}}"
+        },
+        "title": "魔力因子              ",
+        "description": "§7魔法界蓄电池.§a\n晴天时施法生成§e魔力因子*20~50§a,可以在任意施法过程中加入魔力台,直接增加 1 点魔力值.\n\n§b需要 100 魔力值.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/charmed_table/clear/clear",
+    "criteria": {
+        "clear": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{Tags:[\"byte_charm\"]}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "clear"
+        ]
+    ]
+}

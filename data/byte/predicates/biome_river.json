@@ -1,0 +1,17 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "river"
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "biome": "frozen_river"
+            }
+        }
+    ]
+}

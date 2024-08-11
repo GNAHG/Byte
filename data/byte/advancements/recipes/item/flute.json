@@ -1,0 +1,64 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "flute": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "location_check",
+                        "offsetY": -1,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "note_block"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": -2,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "stripped_bamboo_block"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": -3,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "stripped_bamboo_block"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "location_check",
+                        "offsetY": -4,
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "crafting_table"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "flute"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:recipes/item/flute"
+    }
+}

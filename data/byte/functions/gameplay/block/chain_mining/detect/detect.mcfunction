@@ -1,0 +1,10 @@
+execute as @e[tag=byte_chain] at @s run particle shriek 0 ~ ~ ~ 0 0 0 0 1
+execute as @e[tag=byte_chain_coal] at @s run function byte:gameplay/block/chain_mining/detect/detect_coal
+execute as @e[tag=byte_chain_iron] at @s run function byte:gameplay/block/chain_mining/detect/detect_iron
+execute as @e[tag=byte_chain_gold] at @s run function byte:gameplay/block/chain_mining/detect/detect_gold
+execute as @e[tag=byte_chain_copper] at @s run function byte:gameplay/block/chain_mining/detect/detect_copper
+execute as @e[tag=byte_chain_lapis] at @s run function byte:gameplay/block/chain_mining/detect/detect_lapis
+execute as @e[tag=byte_chain_redstone] at @s run function byte:gameplay/block/chain_mining/detect/detect_redstone
+execute as @e[tag=byte_chain_diamond] at @s run function byte:gameplay/block/chain_mining/detect/detect_diamond
+execute as @e[tag=byte_chain_nether_gold] at @s run function byte:gameplay/block/chain_mining/detect/detect_nether_gold
+execute as @e[tag=byte_chain_quartz] at @s run function byte:gameplay/block/chain_mining/detect/detect_quartz

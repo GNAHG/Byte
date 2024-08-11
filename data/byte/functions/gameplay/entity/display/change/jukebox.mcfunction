@@ -1,0 +1,2 @@
+execute if data block ~ ~ ~ RecordItem run data modify entity @s item.id set from block ~ ~ ~ RecordItem.id
+execute unless data block ~ ~ ~ RecordItem run data modify entity @s item.id set value structure_void

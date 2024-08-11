@@ -1,0 +1,24 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "use_flute": {
+            "conditions": {
+                "item": {
+                    "items": [
+                        "spyglass"
+                    ],
+                    "nbt": "{Tags:[\"byte_flute\",\"byte_flute_flute\",\"byte_flute_20\"]}"
+                }
+            },
+            "trigger": "using_item"
+        }
+    },
+    "requirements": [
+        [
+            "use_flute"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/item/flute/use/flute/use_flute_20"
+    }
+}

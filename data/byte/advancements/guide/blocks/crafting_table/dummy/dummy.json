@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carved_pumpkin"
+        },
+        "title": "沙包              ",
+        "description": "合成一个假人.\n\n你需要§c消耗 16 点经验!",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "byte:guide/blocks/crafting_table/crafting_table",
+    "criteria": {
+        "dummy": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "dummy"
+        ]
+    ]
+}

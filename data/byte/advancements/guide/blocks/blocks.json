@@ -1,0 +1,53 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:quartz_block"
+        },
+        "title": "多方块结构合成              ",
+        "description": "数据包的合成配方\n使用多方块结构.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/root",
+    "criteria": {
+        "block": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "location_check",
+                                "predicate": {
+                                    "block": {
+                                        "blocks": [
+                                            "crafting_table"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "location_check",
+                                "predicate": {
+                                    "block": {
+                                        "blocks": [
+                                            "piston"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "trigger": "placed_block"
+        }
+    },
+    "requirements": [
+        [
+            "block"
+        ]
+    ]
+}

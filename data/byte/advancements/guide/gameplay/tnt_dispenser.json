@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spyglass"
+        },
+        "title": "传统RPG       ",
+        "description": "§7空间压缩技术?§a\n望远镜右键TNT可以装载它.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/gameplay",
+    "criteria": {
+        "spyglass": {
+           
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "spyglass"
+        ]
+    ]
+}

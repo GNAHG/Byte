@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:name_tag"
+        },
+        "title": "记住你了       ",
+        "description": "§7悄悄刻下姓名.§a\n命名牌右键制图台,合成物品标记牌.\n主手持物品标记牌,副手持被标记物品,右键制图台进行标记.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/tnt_dispenser",
+    "criteria": {
+        "name_tag": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "cartography_table"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": [
+                                "name_tag"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "name_tag"
+        ]
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "#byte:furnace",
+        "brewing_stand",
+        "#beehives",
+        "jukebox",
+        "redstone_wire",
+        "chiseled_bookshelf",
+        "#byte:chest",
+        "#byte:dispenser",
+        "hopper",
+        "enchanting_table"
+    ]
+}

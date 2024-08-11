@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:globe_banner_pattern"
+        },
+        "title": "施法所需用品              ",
+        "description": "§b烈焰粉*1(施法失败不消耗)\n向日葵*1\n石英*1.\n\n§a在海洋/河流地区施法更快.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/blocks/charmed_table/clear/clear",
+    "criteria": {
+        "recipe": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "recipe"
+        ]
+    ]
+}

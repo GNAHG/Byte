@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "title": "镀魔法              ",
+        "description": "§7魔力烘培中!§a\n\n§b此配方施法不会失败.\n需要 200 魔力值.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "byte:guide/blocks/charmed_table/charmed_table",
+    "criteria": {
+        "enchanted_golden_apple": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "enchanted_golden_apple"
+        ]
+    ]
+}

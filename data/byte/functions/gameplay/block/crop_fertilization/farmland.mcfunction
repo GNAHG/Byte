@@ -1,0 +1,7 @@
+execute if block ~ ~ ~ farmland[moisture=6] run setblock ~ ~ ~ farmland[moisture=7]
+execute if block ~ ~ ~ farmland[moisture=5] run setblock ~ ~ ~ farmland[moisture=6]
+execute if block ~ ~ ~ farmland[moisture=4] run setblock ~ ~ ~ farmland[moisture=5]
+execute if block ~ ~ ~ farmland[moisture=3] run setblock ~ ~ ~ farmland[moisture=4]
+execute if block ~ ~ ~ farmland[moisture=2] run setblock ~ ~ ~ farmland[moisture=3]
+execute if block ~ ~ ~ farmland[moisture=1] run setblock ~ ~ ~ farmland[moisture=2]
+execute if block ~ ~ ~ farmland[moisture=0] run setblock ~ ~ ~ farmland[moisture=1]

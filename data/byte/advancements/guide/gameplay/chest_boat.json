@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chest"
+        },
+        "title": "一步到位       ",
+        "description": "§7很合理对吧§a\n右键船装上箱子.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/banner_boat",
+    "criteria": {
+        "chest": {
+           
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "chest"
+        ]
+    ]
+}

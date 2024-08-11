@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#byte:glass_pane",
+        "#byte:glass_block"
+    ]
+}

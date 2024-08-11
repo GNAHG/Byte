@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stonecutter"
+        },
+        "title": "真实伤害       ",
+        "description": "§7切石机会咬人!§a\n现在切石机会造成伤害.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/dirt_path",
+    "criteria": {
+        "stonecutter": {
+           
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "stonecutter"
+        ]
+    ]
+}

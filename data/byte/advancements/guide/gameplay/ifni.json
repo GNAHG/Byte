@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glow_item_frame"
+        },
+        "title": "Ctrl+z       ",
+        "description": "§7撤销上一步操作...§a\n皮革右键物品展示框添加背景.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/ifi",
+    "criteria": {
+        "ifni": {
+           
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "ifni"
+        ]
+    ]
+}

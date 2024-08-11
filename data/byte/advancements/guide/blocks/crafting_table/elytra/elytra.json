@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra"
+        },
+        "title": "光明科技                                 ",
+        "description": "§7(前往末地来解锁此章节)\n§a合成一个鞘翅.\n\n以下原料需要用工作台合成,鞘翅的合成见魔力台部分.",
+        "show_toast": false,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "goal"
+    },
+    "parent": "byte:guide/blocks/crafting_table/crafting_table",
+    "criteria": {
+        "elytra": {
+            "conditions": {
+                "to": "the_end"
+            },
+            "trigger": "changed_dimension"
+        }
+    },
+    "requirements": [
+        [
+            "elytra"
+        ]
+    ]
+}

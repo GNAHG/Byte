@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_nugget",
+            "nbt": "{Enchantments:[{id:\"infinity\",lvl:1}]}"
+        },
+        "title": "两面性              ",
+        "description": "合成一个硬币.",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": true,
+        "frame": "goal"
+    },
+    "parent": "byte:guide/blocks/piston/piston",
+    "criteria": {
+        "coin": {
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{Tags:[\"byte_coin\"]}"
+                    }
+                ]
+            },
+            "trigger": "inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "coin"
+        ]
+    ]
+}

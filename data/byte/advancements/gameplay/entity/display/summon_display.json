@@ -1,0 +1,41 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "summon_display_normal": {
+            "conditions": {
+                "entity": {
+                    "type": "item_frame"
+                },
+                "item": {
+                    "tag": "signs"
+                },
+                "player": {
+                    "flags": {
+                        "is_sneaking": false
+                    }
+                }
+            },
+            "trigger": "player_interacted_with_entity"
+        },
+        "summon_display_glow": {
+            "conditions": {
+                "entity": {
+                    "type": "glow_item_frame"
+                },
+                "item": {
+                    "tag": "signs" 
+                }
+            },
+            "trigger": "player_interacted_with_entity"
+        }
+    },
+    "requirements": [
+        [
+            "summon_display_normal",
+            "summon_display_glow"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/entity/display/summon_display"
+    }
+}

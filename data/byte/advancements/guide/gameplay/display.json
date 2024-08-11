@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sign"
+        },
+        "title": "注入显卡       ",
+        "description": "§7每秒4帧!§a\n在一些方块上可以放置带告示牌的物品展示框,即可将它注入进方块.§b\n\n支持以下方块:\n容器 熔炉系 蜂箱系\n酿造台 魔力台 红石\n雕纹书架 唱片机",
+        "show_toast": true,
+        "hidden": false,
+        "announce_to_chat": false,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/ifi",
+    "criteria": {
+        "oak_sign": {
+            "trigger": "impossible"
+        }
+    },
+    "requirements": [
+        [
+            "oak_sign"
+        ]
+    ]
+}

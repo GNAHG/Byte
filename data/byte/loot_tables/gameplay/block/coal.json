@@ -1,0 +1,50 @@
+{
+    "type": "command",
+    "functions": [
+        {
+            "function": "set_nbt",
+            "tag": "{Tags:[\"byte_xp\"],Explosion:{Colors:[I;4312372],Type:0b},display:{Name:'{\"text\": \"经验粒\",\"italic\": false}'},HideFlags:255}"
+        }
+    ],
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "firework_star",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 0
+                        }
+                    ],
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "firework_star",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ],
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "firework_star",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ],
+                    "weight": 1
+                }
+            ],
+            "rolls": 1.0
+        }
+    ]
+}

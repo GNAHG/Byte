@@ -1,0 +1,54 @@
+{
+    "type": "fishing",
+    "random_sequence": "byte:gameplay/fishing/flotsam",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:255,display:{Name:'{\"text\": \"漂流瓶\",\"italic\": false}',Lore:['{\"text\": \"它来自另一个世界.\",\"italic\": false,\"color\":\"gray\"}']},Tags:[\"byte_current_bottle\"],CustomPotionColor:12318972}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "reference",
+                            "name": "byte:biome_ocean"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{HideFlags:255,display:{Name:'{\"text\": \"尘封的漂流瓶\",\"italic\": false}',Lore:['{\"text\": \"它来自这无际的大海中.\",\"italic\": false,\"color\":\"gray\"}']},Tags:[\"byte_local_current_bottle\"],CustomPotionColor:16311729}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "reference",
+                            "name": "byte:biome_ocean"
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "name": "gameplay/fishing",
+                    "conditions": [
+                        {"condition": "inverted","term": {
+                            "condition": "reference",
+                            "name": "byte:biome_ocean"
+                        }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

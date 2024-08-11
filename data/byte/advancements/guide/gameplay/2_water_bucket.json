@@ -1,0 +1,46 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:pufferfish_bucket"
+        },
+        "title": "双卡双待       ",
+        "description": "§7雨下整夜.§a",
+        "show_toast": true,
+        "hidden": true,
+        "announce_to_chat": true,
+        "frame": "task"
+    },
+    "parent": "byte:guide/gameplay/water_bucket",
+    "criteria": {
+        "water_bucket": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "water_bucket"
+                            ]
+                        },
+                        "offhand": {
+                            "items": [
+                                "water_bucket"
+                            ]
+                        }
+                    },
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "byte:guide/gameplay/water_bucket":true
+                        }
+                    }
+                }
+            },
+            "trigger": "location"
+        }
+    },
+    "requirements": [
+        [
+            "water_bucket"
+        ]
+    ]
+}

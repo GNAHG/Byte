@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "chest",
+        "trapped_chest",
+        "barrel",
+        "#shulker_boxes"
+    ]
+}

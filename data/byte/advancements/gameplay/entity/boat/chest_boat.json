@@ -1,0 +1,27 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "chest_boat": {
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "chest"
+                            ]
+                        }
+                    }
+                }
+            },
+            "trigger": "started_riding"
+        }
+    },
+    "requirements": [
+        [
+            "chest_boat"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:ray/start/entity/boat/chest_boatray"
+    }
+}
