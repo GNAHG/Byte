@@ -15,7 +15,8 @@
 #declare tag byte_dice 标记 dice
 #declare tag byte_dice_armor_stand 标记 dice_armor_stand
 #declare tag byte_marker_shoot_tnt 标记 shoot_tnt 的生成
-#declare tag byte_shoot_tnt 标记 shoot_tnt
+#declare tag byte_tnt_can 标记可装载的 TNT
+#declare tag byte_tnt_shot 标记已发射的 TNT
 #declare tag byte_dummy_pig 标记 dummy 的受攻击体
 #declare tag byte_marker_dummy_pig 标记 dummy 的受攻击体
 #declare tag byte_marker_dummy_display 标记 dummy 的显示体

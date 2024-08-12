@@ -21,7 +21,8 @@
                                         "absolute": {
                                             "max": 5.5
                                         }
-                                    }
+                                    },
+                                    "nbt": "{Tags:[\"byte_tnt_can\"]}"
                                 }
                             },
                             "equipment": {

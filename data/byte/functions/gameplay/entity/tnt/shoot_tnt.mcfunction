@@ -1,6 +1,6 @@
 summon marker 0.00 0.00 0.00 {Tags:["byte_marker"]}
 execute at @s as @e[tag=byte_marker] positioned 0.00 0.00 0.00 run tp @s ^ ^ ^1
-execute anchored eyes run summon tnt ^ ^ ^-0.2 {Tags:["byte_marker_shoot_tnt","byte_shoot_tnt"],Fuse:80}
+execute anchored eyes run summon tnt ^ ^ ^-0.2 {Tags:["byte_marker_shoot_tnt","byte_tnt_shot"],fuse:80}
 data modify entity @e[type=tnt,tag=byte_marker_shoot_tnt,limit=1] Motion set from entity @e[type=marker,tag=byte_marker,limit=1] Pos
 title @s actionbar {"text": "砰!","color": "green"}
 playsound entity.generic.explode player @a ~ ~ ~ 0.5 1.7
