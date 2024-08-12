@@ -92,5 +92,6 @@
 #declare score_holder #byteY 标记实体的坐标
 #declare score_holder #byteZ 标记实体的坐标
 #declare score_holder #byteMonitor1s 监视器 1s 记录
+#declare score_holder #byteMonitor60s 监视器 60s 记录
 #declare score_holder #byteMonitor5t 监视器 5t 记录
 #declare storage byte:local_current_bottle 记录本地漂流瓶

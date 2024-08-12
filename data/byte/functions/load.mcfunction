@@ -5,5 +5,6 @@ execute unless score #byteFirst bytetemp matches 1 run scoreboard players set #b
 #定时器
 function byte:schedule/1s
 function byte:schedule/5t
+function byte:schedule/60s
 #欢迎
 execute as @a[tag=admin] run function byte:version
