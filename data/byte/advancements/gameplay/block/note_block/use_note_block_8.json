@@ -1,0 +1,33 @@
+{
+    "parent": "byte:gameplay/root",
+    "criteria": {
+        "use_note_block": {
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "note_block"
+                                ],
+                                "state": {
+                                    "note": 8
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "item_used_on_block"
+        }
+    },
+    "requirements": [
+        [
+            "use_note_block"
+        ]
+    ],
+    "rewards": {
+        "function": "byte:gameplay/block/note_block/use_note_block_8"
+    }
+}
